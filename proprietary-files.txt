@@ -1,0 +1,100 @@
+# Sample file to extract required files from an original MOTOROLA XT530 device
+# This script is not required if you have the proprietary repository
+#
+# This file is the file list used by extract-files.sh
+
+## RIL
+bin/qmuxd
+bin/hci_qcomm_init
+bin/port-bridge
+bin/fih_imgupd
+
+#lib
+lib/libgstk_exp.so
+lib/libpbmlib.so
+lib/libwms.so
+lib/libqmi.so
+lib/libmmgsdilib.so
+lib/libril-qcril-hook-oem.so
+lib/libdsm.so
+lib/liboncrpc.so
+lib/libnv.so
+lib/libauth.so
+lib/libdiag.so
+lib/liboem_rapi.so
+lib/libgsdi_exp.so
+lib/libril-qc-1.so
+lib/libcm.so
+lib/libqueue.so
+lib/libdss.so
+lib/libdll.so
+lib/libwmsts.so
+lib/libsnd.so
+lib/egl/egl.cfg
+lib/egl/libEGL_adreno200.so
+lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libGLESv2_adreno200.so
+lib/egl/libq3dtools_adreno200.so
+lib/libgsl.so
+lib/liba2dp.so
+
+# OMX
+lib/libmm-adspsvc.so
+lib/libOmxAacDec.so
+lib/libOmxAacEnc.so
+lib/libOmxAdpcmDec.so
+lib/libOmxAmrDec.so
+lib/libOmxAmrEnc.so
+lib/libOmxAmrRtpDec.so
+lib/libOmxAmrwbDec.so
+lib/libOmxEvrcEnc.so
+lib/libOmxH264Dec.so
+lib/libOmxMp3Dec.so
+lib/libOmxMpeg4Dec.so
+lib/libOmxQcelp13Enc.so
+lib/libOmxVidEnc.so
+lib/libOmxWmaDec.so 
+lib/libOmxWmvDec.so
+lib/libOmxCore.so
+lib/libomx_aacdec_sharedlibrary.so
+lib/libomx_amrdec_sharedlibrary.so
+lib/libomx_amrenc_sharedlibrary.so
+lib/libomx_m4vdec_sharedlibrary.so
+lib/libomx_mp3dec_sharedlibrary.so
+lib/libomx_sharedlibrary.so
+
+## AUDIO
+lib/libaudioeq.so
+
+## CAMERA
+lib/libcamera.so
+lib/liboemcamera.so
+lib/libmmjpeg.so
+lib/libmmipl.so
+lib/libcamera_client.so
+lib/libcameraservice.so
+
+## WiFi
+etc/wifi/softap/firmware_ap.bin
+etc/wifi/softap/hostapd.conf
+etc/wifi/softap/tiap_drv.ko
+etc/wifi/softap/tiwlan_ap.ini
+etc/wifi/cert_chmod.sh
+etc/wifi/DMO_nvs_map.bin
+etc/wifi/DMO_tiwlan.ini
+etc/wifi/DMP_nvs_map.bin
+etc/wifi/DMP_tiwlan.ini
+etc/wifi/firmware.bin
+etc/wifi/nv_data
+etc/wifi/nvs_map.bin
+etc/wifi/tiwlan.ini
+etc/wifi/tiwlan_drv.ko
+etc/wifi/wpa_supplicant.conf
+
+etc/firmware/yamato_pfp.fw
+etc/firmware/yamato_pm4.fw
+
+## HAL
+lib/hw/copybit.msm7k.so
+lib/hw/gralloc.msm7k.so
+lib/hw/sensors.qcom.so

@@ -1,0 +1,17 @@
+# inherit qcom init
+import init.qcom.rc
+
+on boot-pause
+    exec system/bin/battery_charging
+
+on fs
+
+# Mount mtd partitions
+
+    mount_all /fstab.xt530
+
+on post-fs-data
+
+    mount rootfs rootfs / ro remount
+
+
