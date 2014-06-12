@@ -66,12 +66,11 @@ PRODUCT_COPY_FILES += \
 
  # Board-specific init
 PRODUCT_COPY_FILES += \
-    device/motorola/domino/ramdisk/ueventd.xt530.rc:root/ueventd.xt530.rc \
-    device/motorola/domino/ramdisk/init.xt530.rc:root/init.xt530.rc \
     device/motorola/domino/ramdisk/ueventd.goldfish.rc:root/ueventd.goldfish.rc \
+    device/motorola/domino/ramdisk/init.qcom.sh:root/init.qcom.sh \
     device/motorola/domino/ramdisk/init.goldfish.rc:root/init.goldfish.rc \
     device/motorola/domino/ramdisk/ueventd.qcom.rc:root/ueventd.qcom.rc \
-    device/motorola/domino/ramdisk/init.qcom.rc:root/init.qcom.rc \
+    device/motorola/domino/ramdisk/init.qcom.rc:root/init.qcom.rc
 
 ## Wifi Stuff
 PRODUCT_COPY_FILES += \
@@ -138,10 +137,10 @@ PRODUCT_LOCALES := en_US en_IN fr_FR it_IT es_ES et_EE de_DE nl_NL cs_CZ pl_PL j
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.xt530.rc \
     init.qcom.sh \
-    ueventd.xt530.rc \
-    ueventd.qcom.rc
+    init.goldfish.rc \
+    ueventd.qcom.rc \
+    ueventd.goldfish.rc
 
 # Audio
 PRODUCT_PACKAGES += \

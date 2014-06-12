@@ -29,7 +29,7 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_HAS_DOWNLOAD_MODE := true
 TW_MAX_BRIGHTNESS := 255
 TW_ALWAYS_RMRF := true
-TARGET_RECOVERY_FSTAB := device/motorola/domino/fstab.xt530
+TARGET_RECOVERY_FSTAB := device/motorola/domino/fstab.qcom
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true

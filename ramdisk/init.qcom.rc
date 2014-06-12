@@ -42,6 +42,11 @@ on early-init
     # create dirs
     mkdir /sd-ext 0771 system system
 
+# Mount mtd partitions
+
+on fs
+    mount_all fstab.qcom
+
 #############
 ## INIT ##
 #############
